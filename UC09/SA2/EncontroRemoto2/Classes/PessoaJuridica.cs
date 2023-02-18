@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EncontroRemoto2.Classes
 {
-    public class PessoaJuridica
+    public class PessoaJuridica : Pessoa
     {
         public string? RazaoSocial { get; set; }
         public string? Cnpj { get; init; }      
