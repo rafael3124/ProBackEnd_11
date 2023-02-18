@@ -12,9 +12,7 @@ namespace EncontroRemoto2.Classes
         public string? Endereco { get; set; }
         public float Rendimento { get; set; }
 
-        public float PagarImposto(float rendimento)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract float PagarImposto(float rendimento);
+
     }
 }

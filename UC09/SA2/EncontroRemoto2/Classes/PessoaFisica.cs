@@ -9,5 +9,10 @@ namespace EncontroRemoto2.Classes
     {
         public string? Cpf { get; set; }
         public DateTime DataNascimento { get; set; }
+
+        public override float PagarImposto(float rendimento)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
