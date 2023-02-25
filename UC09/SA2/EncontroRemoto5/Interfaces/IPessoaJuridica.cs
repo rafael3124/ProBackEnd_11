@@ -7,6 +7,6 @@ namespace EncontroRemoto2.Interfaces
 {
     public interface IPessoaJuridica
     {
-        bool ValidarCnpj(float rendimento);
+        bool ValidarCnpj(string cnpj);
     }
 }

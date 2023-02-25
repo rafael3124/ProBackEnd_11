@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using EncontroRemoto2.Interfaces;
 
@@ -32,9 +33,27 @@ namespace EncontroRemoto2.Classes
 
 
         //método herdado da interface IPessoaJuridica
-        public bool ValidarCnpj(float rendimento)
+        public bool ValidarCnpj(string cnpj)
         {
-            throw new NotImplementedException();
+         if (Regex.IsMatch(cnpj, @"(^\d{2}.\d{3}.\d{3}/\d{4}-\d{2}$)"))
+            {
+                if (cnpj.Length == 18)
+                {
+                    if (cnpj.Substring(11, 4) == "0001")
+                    {
+                        return true;
+                    }
+                }
+                else if (cnpj.Length == 14)
+                {
+                    if (cnpj.Substring(8, 4) == "0001")
+                        {
+                            return true;
+                        }
+                }
+            }
+            return false;
         }
+        // padrão   58.566.555/0001-55 |||  58566555000155
     }
 }

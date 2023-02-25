@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto3\\EncontroRemoto2.csproj",
+      "projectUniqueName": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto5\\EncontroRemoto2.csproj",
       "projectName": "EncontroRemoto2",
-      "projectPath": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto3\\EncontroRemoto2.csproj",
+      "projectPath": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto5\\EncontroRemoto2.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto3\\obj\\",
+      "outputPath": "C:\\Users\\rafae\\Documents\\SENAI2\\ProBackEnd_11\\UC09\\SA2\\EncontroRemoto5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"

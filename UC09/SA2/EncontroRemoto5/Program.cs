@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text.RegularExpressions;
 using EncontroRemoto2.Classes;
 
 //instanciar um objeto da classe PessoaFisica
@@ -41,7 +42,7 @@ Endereço: {novaPf.Endereco.Logradouro}, {novaPf.Endereco.Numero}, {novaPf.Ender
 
 PessoaJuridica novaPj = new PessoaJuridica();
 
-novaPj.Cnpj = "10.655.088/0001-33";
+novaPj.Cnpj = "10655088000133";
 novaPj.RazaoSocial = "SENAI Informática";
 novaPj.Rendimento = 1000000.99f;
 
@@ -63,7 +64,19 @@ __________________________
 
 Razão social: {novaPj.RazaoSocial}
 Cnpj: {novaPj.Cnpj}
+Validação CNPJ: {(metodosPj.ValidarCnpj(novaPj.Cnpj) ? "Cnpj válido!" : "Cnpj invalido")}
 Rendimento: {novaPj.Rendimento}
 Imposto a pagar: {metodosPj.PagarImposto(novaPj.Rendimento).ToString("C", new CultureInfo("pt-BR"))}
 Endereco: {novaPj.Endereco.Logradouro}, {novaPj.Endereco.Numero}, {novaPj.Endereco.Complemento}, {novaPj.Endereco.Comercial}
 ");
+
+
+//validar data DD/MM/AAAA
+//string data = "01/11/20222";
+//bool valido = Regex.IsMatch(data, @"^\d{2}/\d{2}/\d{4}$");
+//Console.WriteLine(valido);
+
+//Ex substring
+//string texto = "Ferrari";
+//string substring = texto.Substring(0, 4);
+//Console.WriteLine(substring);
